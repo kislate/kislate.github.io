@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    /* overflow: hidden; */
+    user-select: none;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+
+/* 悬停效果，添加平滑过渡 */
+.logo {
+    font-size: 2em;
+    color: #f0f0f3;
+    margin-right: 270px;
+    transition: color 0.3s ease, transform 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 鼠标悬停时 logo 的颜色和缩放效果 */
+.logo:hover {
+    color: #007BFF;  /* 悬停时文字颜色变化 */
+    transform: scale(1.1); /* 放大10% */
+    cursor: pointer; 
+}
+
+/* 如果想要取消 pointer-events: none; */
+.header a {
+    text-decoration: none; /* 去掉链接下划线 */
+}
+.navigation a {
+    
+    text-decoration: none;
+    color: #e8ebeb;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin:0 10px;
+    font-weight: 600;
+}
+.navigation a:hover,
+.navigation a.active{
+    background: #b60cbc;
+    color: #f9f9f9;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+#text{
+    position:absolute;
+    font-size: 5em;
+    color:#fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+
+.parallax img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    pointer-events: none;
+}
+
+.sec{
+    position: relative;
+    background: #003329;
+    padding:100px;
+}
+.sec img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    pointer-events: none;
+}
+
+.sec h2{
+    font-size: 3em;
+    color:#0b0b09cd;
+    position:absolute;
+}
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300
+}

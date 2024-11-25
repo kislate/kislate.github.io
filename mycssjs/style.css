@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+a {
+    text-decoration: none; /* 移除链接下划线 */
+    border: none; /* 移除链接的边框 */
+    outline: none; /* 移除链接的焦点轮廓 */
+}
+
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    /* overflow: hidden; */
+    user-select: none;
+}
+
+/* header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+} */
+header {
+    position: fixed; /* 固定在顶部 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100; /* 确保导航栏在最上面 */
+    background-color: rgba(0, 0, 0, 0.2); /* 透明黑色背景，避免遮挡内容 */
+}
+
+/* 悬停效果，添加平滑过渡 */
+.logo {
+    font-size: 2em;
+    color: #f0f0f3;
+    margin-right: 270px;
+    transition: color 0.3s ease, transform 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 鼠标悬停时 logo 的颜色和缩放效果 */
+.logo:hover {
+    color: #007BFF;  /* 悬停时文字颜色变化 */
+    transform: scale(1.1); /* 放大10% */
+    cursor: pointer; 
+}
+
+/* 如果想要取消 pointer-events: none; */
+.header a {
+    text-decoration: none; /* 去掉链接下划线 */
+}
+.navigation a {
+    
+    text-decoration: none;
+    color: #e8ebeb;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin:0 10px;
+    font-weight: 600;
+}
+.navigation a:hover,
+.navigation a.active{
+    background: #b60cbc;
+    color: #f9f9f9;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+#text{
+    position:absolute;
+    font-size: 5em;
+    color:#fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+
+.parallax img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    pointer-events: none;
+}
+
+.sec{
+    position: relative;
+    background: #003329;
+    padding:100px;
+}
+.sec img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    pointer-events: none;
+}
+
+.sec h2{
+    font-size: 3em;
+    color:#0b0b09cd;
+    position:absolute;
+}
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300
+}
+
+
+/* 新标题的超链接样式 */
+.big-title-link {
+    position: absolute; /* 绝对定位 */
+    top: 275%; /* 垂直方向居中 */
+    left: 35%; /* 水平方向居中 */
+    transform: translate(-50%, -50%); /* 完全居中 */
+    text-decoration: none; /* 去掉超链接下划线 */
+}
+
+/* 新标题的样式 */
+.new-title {
+    font-size: 6em; /* 设置大字体，适应图片大小 */
+    color: #fff; /* 设置字体颜色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 文字阴影效果 */
+    font-weight: 700; /* 加粗字体 */
+    text-align: center; /* 居中显示文本 */
+    white-space: nowrap; /* 防止标题换行 */
+}
+
+/* 超链接的悬停效果 */
+.big-title-link:hover .new-title {
+    color: #007BFF; /* 鼠标悬停时标题颜色改变 */
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+    transition: transform 0.3s ease, color 0.3s ease; /* 平滑过渡效果 */
+}
