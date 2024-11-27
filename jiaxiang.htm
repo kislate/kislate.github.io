@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家乡</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+a {
+    text-decoration: none; /* 移除链接下划线 */
+    border: none; /* 移除链接的边框 */
+    outline: none; /* 移除链接的焦点轮廓 */
+}
+header {
+    position: fixed; /* 固定在顶部 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100; /* 确保导航栏在最上面 */
+    background-color: rgba(0, 0, 0, 0.2); /* 透明黑色背景，避免遮挡内容 */
+}
+
+/* 悬停效果，添加平滑过渡 */
+.logo {
+    font-size: 2em;
+    color: #f0f0f3;
+    margin-right: 270px;
+    transition: color 0.3s ease, transform 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 鼠标悬停时 logo 的颜色和缩放效果 */
+.logo:hover {
+    color: #007BFF;  /* 悬停时文字颜色变化 */
+    transform: scale(1.1); /* 放大10% */
+    cursor: pointer; 
+}
+
+/* 如果想要取消 pointer-events: none; */
+.header a {
+    text-decoration: none; /* 去掉链接下划线 */
+}
+.navigation a {
+    
+    text-decoration: none;
+    color: #e8ebeb;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin:0 10px;
+    font-weight: 600;
+}
+.navigation a:hover,
+.navigation a.active{
+    background: #b60cbc;
+    color: #f9f9f9;
+}
+        body{
+            background-image: url("images/2DCFD24555E20F8DB5DDECFFEAF0CC49.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        }
+
+        .intro-container {
+        background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 1000px; /* 最大宽度 */
+        text-align: center;
+        position: relative;
+    }
+
+    .intro-container h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #333;
+        font-family: 楷体;
+    }
+
+    .intro-container p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        color: #555;
+        font-family: 仿宋;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h2 class="logo" style="font-family: cursive;">Kislate</h2>
+        </a>
+        <nav class="navigation" style="font-size: larger;">
+            <a href="index.html" >首页</a>
+            <a href="jianjie.htm">个人简介</a>
+            <a href="xiangce.htm">我的小屋</a>
+            <a href="donghua.htm">游戏&动漫</a>
+            <a href="jiaxiang.htm" class="active">我的家乡</a>
+        </nav>
+    </header>
+    <div class="intro-container">
+        <h1>广西之美</h1>
+        <p>广西，这片土地上的每一处风景都像是大自然不经意间留下的温柔笔触，让人沉醉其中。</p>
+        <p>桂林的山水，宛如一幅流动的水墨画。清晨，薄雾缭绕在山峰之间，仿佛给这个世界披上了一层轻纱。漓江的水清澈见底，碧绿如玉，倒映着两岸的奇峰异石。乘坐竹筏漂流其间，仿佛进入了一个梦幻的世界。山峦起伏，云雾缭绕，一切都显得那么宁静而神秘。</p>
+        <p>阳朔的田园风光，更是让人心旷神怡。稻田一片片金黄，远处的山峦若隐若现，仿佛是世外桃源般的存在。骑着自行车穿梭在乡间小道上，感受微风拂面，听着田野里传来的鸟鸣声，那一刻，时间仿佛静止了。夕阳西下时，金色的阳光洒在稻田上，整个世界都被染上了温暖的色彩。</p>
+        <p>北海的银滩，细软的沙子如同白糖般细腻，阳光下闪烁着耀眼的光芒。海浪轻轻拍打着岸边，带来阵阵清凉。漫步在沙滩上，脚下的沙子温暖而柔软，仿佛能抚平一切烦恼。远处的海天一色，令人心旷神怡，所有的忧愁都在这一刻烟消云散。</p>
+        <p>龙脊梯田，层层叠叠，错落有致，宛如大地的阶梯。春天，梯田里注满了水，像一面面镜子，映照着蓝天白云；秋天，金黄的稻谷随风摇曳，仿佛一片金色的海洋。站在山顶俯瞰，梯田与山峦交织成一幅壮丽的画卷，美得令人窒息。</p>
+        <p>广西的每一个角落都充满了诗意，无论是山水之间的静谧，还是海边的浪漫，亦或是梯田的壮观，都让人流连忘返。在这里，你可以找到内心的宁静，也可以感受到生活的美好。</p>
+    </div>
+</body>
+</html>
+
+ 
