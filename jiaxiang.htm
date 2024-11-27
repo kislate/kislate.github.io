@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>家乡</title>
     <style>
+        
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 *{
     margin:0;
@@ -64,8 +65,26 @@ header {
     background: #b60cbc;
     color: #f9f9f9;
 }
+        .intro-container {
+        margin-top: 10px;
+        margin-left: 200px;
+        display: inline-block;
+        }
+        .trigger {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.2); /* 按钮背景颜色 */
+        color: rgb(252, 160, 150); /* 文字颜色 */
+        border: none;
+        border-radius: 5px; /* 圆角 */
+        cursor: pointer; /* 鼠标指针变为手形 */
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s; /* 平滑过渡效果 */
+        }   
         body{
-            background-image: url("images/2DCFD24555E20F8DB5DDECFFEAF0CC49.jpg");
+        background-image: url("images/2DCFD24555E20F8DB5DDECFFEAF0CC49.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -73,13 +92,14 @@ header {
         padding: 0;
         font-family: Arial, sans-serif;
         color: #333;
-        display: flex;
+        display: inline-block;
         justify-content: center;
         align-items: center;
         height: 100vh;
         }
 
-        .intro-container {
+        .hidden {
+        visibility: hidden; /* 默认隐藏 */
         background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
         padding: 20px;
         border-radius: 10px;
@@ -87,21 +107,46 @@ header {
         max-width: 1000px; /* 最大宽度 */
         text-align: center;
         position: relative;
-    }
+        opacity: 0;
+        transition: opacity 0.5s, visibility 1s; /* 平滑过渡效果 */
+        }
 
-    .intro-container h1 {
+        .hidden h1 {
         font-size: 2.5em;
         margin-bottom: 20px;
         color: #333;
         font-family: 楷体;
-    }
+        }
+        .jieshao{
+            margin-left: 300px;
+            margin-top: 300px;
+        }
+        .jieshao p{
+            font-family: 楷体;
+            font-size: 1.5em;
+        }
 
-    .intro-container p {
+        .hidden p {
         font-size: 1.2em;
         line-height: 1.6;
         color: #555;
         font-family: 仿宋;
-    }
+        }
+        .trigger:hover + .hidden,
+        .hidden-text:hover {
+         visibility: visible; /* 显示隐藏的div */
+         opacity: 1;
+        }
+        @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+        }
+        .trigger:hover{
+        opacity: 0.3;
+        background-color: #efd4f6; /* 鼠标悬停时的背景颜色 */
+        animation: pulse 0.7s ease-in-out; /* 添加脉冲动画 */
+        }
     </style>
 </head>
 <body>
@@ -117,14 +162,30 @@ header {
             <a href="jiaxiang.htm" class="active">我的家乡</a>
         </nav>
     </header>
-    <div class="intro-container">
-        <h1>广西之美</h1>
+    <div class="jieshao" style="font-family: 楷体;background-color: rgba(0, 0, 0, 0.2);color: #f0f2ed;">
+        <h1 class="广西-我的家乡" style="color: #f3f9c0; font-family: 仿宋;">广西-我的家乡</h1>
         <p>广西，这片土地上的每一处风景都像是大自然不经意间留下的温柔笔触，让人沉醉其中。</p>
-        <p>桂林的山水，宛如一幅流动的水墨画。清晨，薄雾缭绕在山峰之间，仿佛给这个世界披上了一层轻纱。漓江的水清澈见底，碧绿如玉，倒映着两岸的奇峰异石。乘坐竹筏漂流其间，仿佛进入了一个梦幻的世界。山峦起伏，云雾缭绕，一切都显得那么宁静而神秘。</p>
-        <p>阳朔的田园风光，更是让人心旷神怡。稻田一片片金黄，远处的山峦若隐若现，仿佛是世外桃源般的存在。骑着自行车穿梭在乡间小道上，感受微风拂面，听着田野里传来的鸟鸣声，那一刻，时间仿佛静止了。夕阳西下时，金色的阳光洒在稻田上，整个世界都被染上了温暖的色彩。</p>
-        <p>北海的银滩，细软的沙子如同白糖般细腻，阳光下闪烁着耀眼的光芒。海浪轻轻拍打着岸边，带来阵阵清凉。漫步在沙滩上，脚下的沙子温暖而柔软，仿佛能抚平一切烦恼。远处的海天一色，令人心旷神怡，所有的忧愁都在这一刻烟消云散。</p>
-        <p>龙脊梯田，层层叠叠，错落有致，宛如大地的阶梯。春天，梯田里注满了水，像一面面镜子，映照着蓝天白云；秋天，金黄的稻谷随风摇曳，仿佛一片金色的海洋。站在山顶俯瞰，梯田与山峦交织成一幅壮丽的画卷，美得令人窒息。</p>
-        <p>广西的每一个角落都充满了诗意，无论是山水之间的静谧，还是海边的浪漫，亦或是梯田的壮观，都让人流连忘返。在这里，你可以找到内心的宁静，也可以感受到生活的美好。</p>
+        <p>桂林的山水，宛如一幅流动的水墨画，薄雾缭绕在山峰之间。</p>
+        <p>阳朔的田园，让人心旷神怡。稻田一片片金黄，山峦若隐若现，夕阳西下，世界落上了温暖的色彩。</p>
+        <p>北海的银滩，海浪清凉，沙子柔软，远处的海天一色，忧愁随风而散。</p>
+        <p>龙脊梯田，层层叠叠，错落有致，金黄的稻谷随风摇曳，绘出金色的海洋。</p>
+        <p>广西的每一个角落都充满了诗意，难以道完.....</p>
+        <p>或许，你对那的食物感兴趣？</p>
+        <p>那有许多独特的美食，螺蛳粉，桂林米粉？或许你早已耳熟能详</p>
+        <p>这边的扣肉，粽子，可和别处的有点不一样</p>
+        <p>又或者来些高雅的，茶楼、点心，可不只有广东才有</p>
+        <p>三月三的“鸡屎藤”，可是你没听说过的美味。</p>
+    </div>
+    </div>
+    <div class="intro-container">
+        <div class="trigger" style="font-family: 楷体">一些独白</div>
+        <div class="hidden">
+            <p>广西，落在偏远的南方，离我很远，但也很近，因为那是我的故乡.....</p>
+            <p>我在怀念什么？我自己也有些模糊不清.....那的山水？</p>
+            <p>可是当初我也不曾留意。</p>
+            <p>我曾听说“桂林山水甲天下”，又或银滩是“天下第一滩”，可是却也不仅仅如此....</p>
+            <p>如此感觉捉摸不透，或许因为是家乡.....</p>
+    </div>
     </div>
 </body>
 </html>
