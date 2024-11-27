@@ -117,11 +117,23 @@ header {
     color:#0b0b09cd;
     position:absolute;
 }
+.diyihang{
+    position: absolute;
+    margin-top: 100px;
+}
 .sec p {
     font-size: 1em;
     color: #fff;
-    font-weight: 300
+    font-weight: 300;
+    font-size: x-large;
+    font-family: 仿宋;
+    opacity: 1;
 }
+.dierhang{
+    position: absolute;
+    margin-top: 165px;
+}
+
 
 
 /* 新标题的超链接样式 */
