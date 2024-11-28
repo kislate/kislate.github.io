@@ -59,5 +59,6 @@ header {
 
 body{
     background-color: rgba(190, 218, 231, 0.5);
+    user-select: none;
 }
 
