@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+a {
+    text-decoration: none; /* 移除链接下划线 */
+    border: none; /* 移除链接的边框 */
+    outline: none; /* 移除链接的焦点轮廓 */
+}
+header {
+    position: fixed; /* 固定在顶部 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100; /* 确保导航栏在最上面 */
+    background-color: rgba(0, 0, 0, 0.2); /* 透明黑色背景，避免遮挡内容 */
+}
+.logo {
+    font-size: 2em;
+    color: #f3e231;
+    margin-right: 270px;
+    transition: color 0.3s ease, transform 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 鼠标悬停时 logo 的颜色和缩放效果 */
+.logo:hover {
+    color: #007BFF;  /* 悬停时文字颜色变化 */
+    transform: scale(1.1); /* 放大10% */
+    cursor: pointer; 
+}
+
+/* 如果想要取消 pointer-events: none; */
+.header a {
+    text-decoration: none; /* 去掉链接下划线 */
+}
+.navigation a {
+    
+    text-decoration: none;
+    color: #e8ebeb;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin:0 10px;
+    font-weight: 600;
+}
+.navigation a:hover,
+.navigation a.active{
+    background: #f33009;
+    color: #f9f9f9;
+}
+
+
+body{
+    background-color: rgba(190, 218, 231, 0.5);
+}
+
