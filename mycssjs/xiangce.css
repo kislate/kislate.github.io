@@ -12,6 +12,7 @@ body{
     align-items: center;
     height: 100vh;
     background-color: rgb(243, 230, 241);
+    user-select: none;
 }
 
 .page1{
