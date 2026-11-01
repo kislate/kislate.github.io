@@ -1,42 +1,32 @@
-# kislate / 个人手记
+# 李宗锴 / kislate
 
-米黄色、暖棕色与陶土红的个人博客 demo。纯 HTML / CSS / JavaScript，无需安装或构建，可以直接在 GitHub 网页修改。
+个人网站的第一版 demo。米黄色 A4 纸张与侧边目录，用文字和图片排版呈现个人介绍、项目与手记。
 
-- 首页：个人介绍、身份、经历、精选项目。
-- 项目集：一个明确标注的示例项目，包含代码、图片和视频占位。
-- 手记：文章列表与一篇排版示范短文。
+站点使用纯 HTML / CSS / JavaScript，无需安装依赖、无需构建，可直接在 GitHub 网页编辑。
 
-学校、职业、真实经历与项目成果都没有虚构，待本人补充。
+## 网页编辑
 
-## 只用 GitHub 网页上线
+打开对应文件，点击编辑，完成后选择 Commit changes。GitHub Pages 会从 `main` 分支根目录发布。
 
-1. 旧仓库保留。若要沿用 `https://kislate.github.io/`，先在旧仓库 Settings → General 将仓库改名为 `kislate.github.io-legacy`（名称如被占用可另取），在旧仓库 Settings → Pages 停用发布，再将旧仓库归档。归档保留代码与提交历史。
-2. 创建新的公开仓库 `kislate.github.io`。如改用 `personal-blog` 等其他仓库名，对应站点地址为 `https://kislate.github.io/personal-blog/`。
-3. 在新仓库点击 Add file → Upload files，上传本目录里的网页和 `assets`、`projects`、`notes`、`media` 目录，网页文件应直接位于仓库根目录。单独确认空文件 `.nojekyll` 已加入。
-4. 新仓库 Settings → Pages → Build and deployment：Source 选择 **Deploy from a branch**，Branch 选择 **main / (root)**，保存。
-5. Pages 完成发布后，使用页面显示的 Visit site 链接查看。
-
-以上是待执行的上线步骤，README 本身不代表旧仓库已停用或新站已发布。
-
-GitHub 官方说明：https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
-
-## 网页编辑位置
-
-| 想修改什么 | 文件 |
+| 内容 | 文件 |
 | --- | --- |
-| 介绍、身份、经历、精选项目 | `index.html` |
-| 项目目录 | `projects/index.html` |
-| 项目详情、代码、视频 | `projects/first-project.html` |
+| 首页：简介、AIRHUST、教育与实践 | `index.html` |
+| 项目列表 | `projects/index.html` |
+| 无人机竞速项目详情 | `projects/drone-racing.html` |
 | 手记目录 | `notes/index.html` |
-| 示例文章 | `notes/a-beginning.html` |
-| 导航、页脚 | `assets/site.js` |
-| 配色、字体、间距 | `assets/style.css` |
-| 图片与 MP4 文件 | `media/` |
+| 网站说明短文 | `notes/a-beginning.html` |
+| 侧边目录与外链 | `assets/site.js` |
+| 纸张、字体、间距、手机布局 | `assets/style.css` |
+| 图片与视频 | `media/` |
 
-进入文件 → 编辑 → Commit changes 即可更新。增加项目或文章时，复制一份对应详情文件，再在目录页加上链接即可。
+增加项目或文章时，复制现有详情页，再在对应目录页加上链接。项目详情中已留好图片、视频和代码仓库链接的 HTML 注释示例。
 
-在线时尝试加载 Noto Serif SC 字体；加载不到时自动使用系统宋体。插画是站点自带 SVG，不依赖外部图片服务。
+首页专业经历按本人简历整理；兴趣与相册图片来自旧站；AIRHUST 介绍由本人补充。项目代码、现场图片与视频尚待整理。
 
-## 本地预览（可选）
+## 旧站
+
+旧仓库保留在 [kislate.github.io-legacy](https://github.com/kislate/kislate.github.io-legacy)，用于保存原有内容与提交历史。
+
+## 本地预览
 
 在本目录运行 `python3 -m http.server 4173`，打开 `http://localhost:4173`。

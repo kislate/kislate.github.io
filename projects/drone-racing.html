@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>无人机自主飞行竞速 — 李宗锴 / kislate</title>
+  <meta name="description" content="李宗锴的个人网站：关于我、项目与手记。">
+  <meta name="theme-color" content="#e9e3d8">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/site.js"></script>
+</head>
+<body data-root="../" data-page="projects">
+  <a class="skip" href="#main">跳到正文</a>
+  <div class="workspace">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="paper-stack" id="main">
+      <article class="paper">
+        <header class="running-head"><span>李宗锴 / KISLATE</span><span>项目 / 01</span></header>
+        <a class="back" href="./">← 项目目录</a>
+        <div class="page-title detail-title"><h1>无人机自主飞行竞速</h1><p class="subtitle">RoboCup 中国赛 · 2025 年 8 月</p></div>
+        <dl class="project-facts"><div><dt>参与工作</dt><dd>任务程序、飞行控制、障碍识别</dd></div><div><dt>团队成果</dt><dd>全国总决赛冠军 · 国家级一等奖</dd></div></dl>
+        <div class="detail-body prose">
+          <p>这是一次将感知、规划与飞行任务衔接起来的实践。无人机需要识别不同类型的障碍物，并完成连续穿越。</p>
+          <h2>我做的部分</h2>
+          <ul>
+            <li>独立编写 ROS / MAVROS 任务与飞控程序，参与实机联调。</li>
+            <li>采用点云聚类、平面提取与 OpenCV 识别，输出障碍物的类型和三维位置。</li>
+            <li>设计圆环、横竖框和刀旗的通过策略，结合航向平滑、目标选择与丢失目标重搜，完成连续飞行任务。</li>
+          </ul>
+          <h2>使用的工具</h2>
+          <p>C/C++、ROS、MAVROS、PCL、OpenCV。</p>
+          <h2>代码、图片与演示</h2>
+          <div class="media-slot">项目资料待整理。</div>
+          <!-- 有资料后，可以在此加入：
+          <figure><img src="../media/racing.jpg" alt="比赛现场"><figcaption>图片说明</figcaption></figure>
+          <video controls playsinline preload="metadata"><source src="../media/racing.mp4" type="video/mp4"></video>
+          <p><a href="真实代码仓库地址">查看代码 ↗</a></p>
+          -->
+        </div>
+        <div class="footer-spacer"></div>
+        <footer class="page-footer"><a href="./">返回项目目录 →</a><span class="page-number">02—1</span></footer>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
