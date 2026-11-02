@@ -37,9 +37,9 @@ const displayCase = document.querySelector('#showcase');
 displayCase.innerHTML = `
   <header class="showcase-head"><h2>展柜</h2><p>旁注与附件</p></header>
   <section class="showcase-section"><h3>短笺</h3><p>${showcaseContent.note}</p></section>
-  <section class="showcase-section"><h3>链接</h3>
+  ${showcaseContent.links.length ? `<section class="showcase-section"><h3>链接</h3>
     ${showcaseContent.links.map(item => `<a class="showcase-link" href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title} ↗<small>${item.note}</small></a>`).join('')}
-  </section>
-  <section class="showcase-section"><h3>附件</h3>
-    ${showcaseContent.attachments.length ? `<ul class="showcase-files">${showcaseContent.attachments.map(item => `<li><a href="${root}${item.path}" target="_blank" rel="noopener noreferrer">${item.title} ↗</a><p class="empty-attachment">${item.note}</p></li>`).join('')}</ul>` : '<p class="empty-attachment">资料待整理。</p>'}
-  </section>`;
+  </section>` : ''}
+  ${showcaseContent.attachments.length ? `<section class="showcase-section"><h3>附件</h3>
+    <ul class="showcase-files">${showcaseContent.attachments.map(item => `<li><a href="${new URL(item.path, document.baseURI).href}" target="_blank" rel="noopener noreferrer">${item.title} ↗</a><p class="empty-attachment">${item.note}</p></li>`).join('')}</ul>
+  </section>` : ''}`;
