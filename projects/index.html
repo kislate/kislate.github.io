@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>项目 — 李宗锴 / kislate</title>
-  <meta name="description" content="李宗锴的个人网站：关于我、项目与手记。">
+  <meta name="description" content="李宗锴的项目记录、代码与演示。">
   <meta name="theme-color" content="#e9e3d8">
   <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/showcase.js"></script>
   <script defer src="../assets/site.js"></script>
 </head>
 <body data-root="../" data-page="projects">
@@ -16,43 +17,19 @@
     <main class="paper-stack" id="main">
       <article class="paper">
         <header class="running-head"><span>李宗锴 / KISLATE</span><span>项目目录</span></header>
-        <div class="page-title"><h1>项目</h1><p class="subtitle">无人机、机器人，以及一个团队的网站。</p></div>
-        <div class="project-list">
-          <section class="project-entry">
-            <div class="entry-meta"><time>2025.08</time><span>RoboCup 中国赛</span></div>
-            <a href="drone-racing.html"><h3>无人机自主飞行竞速</h3></a>
-            <p>点云障碍物识别、ROS / MAVROS 任务与飞控程序，以及多类障碍的连续穿越。</p>
-            <div class="entry-result">全国总决赛冠军 · 国家级一等奖</div>
-          </section>
-          <section class="project-entry">
-            <div class="entry-meta"><time>2026.10</time><span>RoboCup 中国赛</span></div>
-            <h3>无人机识别与快递运输</h3>
-            <p>主要负责全图搜索路径规划，将场地点云转为栅格地图，生成覆盖与补扫路线，深度参与 EGO-Planner 调优。</p>
-            <div class="entry-result">国家级一等奖</div>
-          </section>
-          <section class="project-entry">
-            <div class="entry-meta"><time>2026.07</time><span>中国机器人及人工智能大赛 · CRAIC</span></div>
-            <h3>微型无人机</h3>
-            <p>为现实场地中的 CIFAR-100 打印靶标制作训练数据，自动合成并标注 40 万张图像。</p>
-            <div class="entry-result">国家级一等奖</div>
-          </section>
-          <section class="project-entry">
-            <div class="entry-meta"><time>2025.12 / 2026.08</time><span>AIC / 小米杯</span></div>
-            <h3>无人机配送与 CyberDog</h3>
-            <p>分别参与配送航程路径规划，以及机器狗任务控制、步态配置和视觉与运动控制联调。</p>
-            <div class="entry-result">AIC 国家级二等奖 / 小米杯国家级三等奖</div>
-          </section>
-          <section class="project-entry">
-            <div class="entry-meta"><span>团队网站</span><a class="subtle-link" href="https://airhust.cn/" target="_blank" rel="noopener noreferrer">airhust.cn ↗</a></div>
-            <h3>AIRHUST</h3>
-            <p>参与团队网站的构建。</p>
-          </section>
+        <div class="page-title"><h1>项目</h1><p class="subtitle">项目记录、代码与演示，分别归档。</p></div>
+        <div class="folder-list">
+          <a class="folder-row" href="drone-racing/"><span class="folder-icon" aria-hidden="true"></span><span class="folder-copy"><h2>无人机自主飞行竞速</h2><p>感知、飞行任务与连续穿越。</p></span><span class="folder-meta">2025.08<br>RoboCup 中国赛</span></a>
+          <a class="folder-row" href="drone-delivery/"><span class="folder-icon" aria-hidden="true"></span><span class="folder-copy"><h2>无人机识别与快递运输</h2><p>覆盖搜索、补扫路线与局部避障。</p></span><span class="folder-meta">2026.10<br>RoboCup 中国赛</span></a>
+          <a class="folder-row" href="micro-drone/"><span class="folder-icon" aria-hidden="true"></span><span class="folder-copy"><h2>微型无人机</h2><p>现实背景中的视觉识别与训练数据。</p></span><span class="folder-meta">2026.07<br>CRAIC</span></a>
+          <a class="folder-row" href="aic-delivery/"><span class="folder-icon" aria-hidden="true"></span><span class="folder-copy"><h2>无人机配送</h2><p>航程规划、巡航与投送任务。</p></span><span class="folder-meta">2025.12<br>AIC</span></a>
+          <a class="folder-row" href="cyberdog/"><span class="folder-icon" aria-hidden="true"></span><span class="folder-copy"><h2>CyberDog 任务控制</h2><p>任务控制、动作配置与实机联调。</p></span><span class="folder-meta">2026.08<br>小米杯</span></a>
+          <a class="folder-row" href="airhust-site/"><span class="folder-icon" aria-hidden="true"></span><span class="folder-copy"><h2>AIRHUST 团队网站</h2><p>为团队网站的构建出过一份力。</p></span><span class="folder-meta">团队网站</span></a>
         </div>
-        <p class="paper-note">先列下项目。代码、图片与演示视频，之后逐项补充。</p>
-        <div class="footer-spacer"></div>
-        <footer class="page-footer"><a href="../notes/">手记 →</a><span class="page-number">02</span></footer>
+        <footer class="page-footer"><a href="../notes/">手记 →</a><span>02</span></footer>
       </article>
     </main>
+    <aside class="showcase" id="showcase" aria-label="展柜"></aside>
   </div>
 </body>
 </html>
