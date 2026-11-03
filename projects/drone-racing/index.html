@@ -19,7 +19,7 @@
         <header class="running-head"><span>李宗锴 / KISLATE</span><span>项目记录</span></header>
         <a class="back" href="../">← 项目目录</a>
         <div class="page-title detail-title"><h1>无人机自主飞行竞速</h1><p class="subtitle">RoboCup 中国赛 · 2025.08—10</p></div>
-        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#work">核心工作</a><a href="#demo">终端演示</a><a href="#awards">比赛结果</a></nav>
+        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#work">核心工作</a><a href="#demo">终端演示</a><a href="#awards">专项赛与决赛</a></nav>
         <div class="detail-body prose">
           <section id="overview">
             <h2>第一次承担核心开发</h2>
@@ -30,7 +30,7 @@
           <section class="paper-section" id="work">
             <h2>我做的部分</h2>
             <ul>
-              <li>采用点云聚类、平面提取与 OpenCV 识别，输出障碍物类型和三维位置，为连续穿越提供目标信息。</li>
+              <li>结合点云聚类、平面提取与 OpenCV 识别，输出障碍物类型和三维位置；其中刀旗采用简单的圆柱体识别方法，为连续穿越提供目标信息。</li>
               <li>独立编写 ROS / MAVROS 任务与飞控程序，组织起飞、目标搜索、连续穿越与降落。</li>
               <li>针对圆环、横竖框和刀旗设计通过策略，结合航向平滑、目标选择与丢失目标重搜，完成多种障碍物的连续飞行任务。</li>
               <li>参与实机联调，将感知结果、任务切换与飞行控制衔接到实际运行中。</li>
@@ -41,9 +41,13 @@
             <p>这段录屏记录了程序运行时的终端输出与 RViz 可视化，展示障碍物识别结果、位置反馈及飞行任务的执行状态。</p>
             <figure class="project-media"><video controls muted playsinline preload="metadata" poster="./media/terminal-poster.jpg" aria-label="RoboCup 终端与 RViz 运行演示，无声"><source src="./media/terminal-demo.mp4" type="video/mp4"></video><figcaption>终端与 RViz 运行记录 · 约 2 分 34 秒 · 无声。</figcaption></figure>
           </section>
-          <section class="paper-section" id="awards">
+          <section class="paper-section project-records" id="awards">
             <h2>从专项赛到总决赛</h2>
-            <p>2025 年 8 月，我们在山东烟台获得无人机自主飞行竞速专项赛亚军。同年 10 月 17—19 日，在河北石家庄的全国总决赛中，团队获得该赛项冠军、国家级一等奖。</p>
+            <h3>专项赛 · 山东烟台</h3>
+            <p>2025 年 8 月的专项赛，我们遇到了各种各样的问题。现场发现了电磁场对 IMU 的干扰，点云处理也走了弯路：场地比较杂乱，先做平面分割会切出过多平面，给后续识别带来困难。我们后来才意识到，处理顺序应该是先聚类，再对各簇进行平面分割。</p>
+            <p>当时还没有做下视定位降落。带着这些尚未解决的问题，比赛过程有惊无险，最后竟然拿到了亚军。这个成绩超出了我们的预期，也让我们清楚地看到了接下来需要补齐的部分。</p>
+            <h3>总决赛 · 河北石家庄</h3>
+            <p>专项赛暴露的这些问题，在决赛中都得到了解决：处理了 IMU 干扰，将点云处理流程调整为先聚类、再分割平面，也补上了下视定位降落。2025 年 10 月 17—19 日，我们在全国总决赛中获得无人机自主飞行竞速赛项冠军、国家级一等奖。</p>
             <div class="award-pair">
               <figure><img src="./media/special-runner-up.jpg" alt="2025 年 8 月山东烟台无人机自主飞行竞速专项赛亚军奖杯" width="6144" height="8192" loading="lazy"><figcaption><span class="record-label">2025.08 / 山东 · 烟台</span>专项赛亚军</figcaption></figure>
               <figure><img src="./media/finals-champion.jpg" alt="2025 年 10 月河北石家庄无人机自主飞行竞速总决赛冠军奖杯" width="1440" height="1920" loading="lazy"><figcaption><span class="record-label">2025.10 / 河北 · 石家庄</span>全国总决赛冠军</figcaption></figure>
