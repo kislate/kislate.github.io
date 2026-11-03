@@ -4,5 +4,7 @@
 const showcaseContent = {
   "note": "覆盖搜索、补扫路线与局部避障的补充记录。",
   "links": [],
-  "attachments": []
+  "attachments": [
+    { "title": "物流赛联调截图", "path": "media/Pasted image.png", "note": "机载相机画面与地图、路线显示" }
+  ]
 };

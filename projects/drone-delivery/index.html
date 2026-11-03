@@ -7,8 +7,8 @@
   <meta name="description" content="李宗锴的项目记录与演示。">
   <meta name="theme-color" content="#e9e3d8">
   <link rel="stylesheet" href="../../assets/style.css?v=20261102-1">
-  <script defer src="./showcase.js?v=20261101-4"></script>
-  <script defer src="../../assets/site.js?v=20261102-4"></script>
+  <script defer src="./showcase.js?v=20261103-1"></script>
+  <script defer src="../../assets/site.js?v=20261103-1"></script>
 </head>
 <body data-root="../../" data-page="projects" data-project="drone-delivery">
   <a class="skip" href="#main">跳到正文</a>
@@ -19,7 +19,7 @@
         <header class="running-head"><span>李宗锴 / KISLATE</span><span>项目记录</span></header>
         <a class="back" href="../">← 项目目录</a>
         <div class="page-title detail-title"><h1>无人机识别与快递运输</h1><p class="subtitle">RoboCup 中国赛 · 2026.10</p></div>
-        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#records">实现记录</a><a href="#demo">图片与演示</a></nav>
+        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#records">实现记录</a><a href="#demo">联调画面</a><a href="#handover">和新生一起参赛</a></nav>
         <div class="detail-body prose">
           <section id="overview"><h2>项目概述</h2><p>这个项目围绕无人机的全图搜索与快递运输任务展开。我主要负责搜索路径规划，并深度参与 EGO-Planner 调优，衔接全图搜索路线与局部避障轨迹的执行。</p></section>
           <dl class="project-facts"><div><dt>参与工作</dt><dd>全图搜索路径规划 · EGO-Planner 调优</dd></div><div><dt>团队成果</dt><dd>国家级一等奖</dd></div></dl>
@@ -32,11 +32,13 @@
             <h3>覆盖与补扫</h3><p>搜索路线需要覆盖场地区域，也需要根据实际飞行位置记录搜索进度，对遮挡和遗漏区域补扫。路线连接处还要检查障碍夹角等不可通行的位置。</p>
             <h3>全局路线与局部轨迹</h3><p>全图搜索给出任务路线，局部避障负责轨迹执行。联调中涉及障碍膨胀、速度约束和重规划等设置。</p>
           </section>
-          <section class="asset-section" id="demo"><h2>图片与演示</h2><p class="asset-note">演示视频与图片待补充。</p>
-            <!-- 上传素材到本项目 media/ 后，可在此取消注释并替换文件名：
-            <figure><img src="./media/example.jpg" alt="项目现场或运行结果" loading="lazy"><figcaption>图片说明</figcaption></figure>
-            <video controls playsinline preload="metadata"><source src="./media/demo.mp4" type="video/mp4"></video>
-            -->
+          <section class="asset-section" id="demo"><h2>联调画面</h2>
+            <p>联调时，将机载相机画面和地图、路线显示放在一起，对照观察场地中的实际目标与路线执行情况。</p>
+            <figure class="project-media"><img src="./media/Pasted%20image.png" alt="物流赛联调截图：左侧为拍到红十字地面标志的机载相机画面，右侧为场地地图与路线可视化" width="831" height="634" loading="lazy"><figcaption>RoboCup 无人机识别与快递运输 / 机载相机画面与地图、路线可视化。</figcaption></figure>
+          </section>
+          <section class="paper-section" id="handover"><h2>和新生一起的第一场比赛</h2>
+            <p>这是我第一次和队里的新生一起打比赛，也是我的最后一场比赛。以前是学长带着我们熟悉比赛，现在也轮到我们把经验交给下一届。</p>
+            <p>当年参加穿环赛，许多问题是自己一点点摸索着解决的。这一次，我想把当时积累的经验交给他们，遇到问题一起解决，陪他们从准备走到完赛。</p>
           </section>
         </div>
         <footer class="page-footer"><a href="../../projects/">返回项目目录 →</a><span>PROJECTS</span></footer>
