@@ -2,7 +2,7 @@
 // 附件路径相对于当前 HTML 页面，例如项目内可填 media/demo.pdf。
 // attachments 示例：{ title: "附件标题", path: "media/file.pdf", note: "PDF · 说明" }
 const showcaseContent = {
-  "note": "任务控制、动作配置与实机调试的补充记录。",
+  "note": "国三收场，留作一次尝试的记录。",
   "links": [],
   "attachments": []
 };
