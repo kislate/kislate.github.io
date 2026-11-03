@@ -4,6 +4,7 @@ const project = document.body.dataset.project;
 const projects = [
   ['drone-racing', '自主飞行竞速'],
   ['aic-delivery', '无人机配送'],
+  ['rmua2026', 'RMUA 2026'],
   ['drone-delivery', '识别与快递运输'],
   ['micro-drone', '微型无人机'],
   ['cyberdog', 'CyberDog'],

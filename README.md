@@ -19,7 +19,7 @@
 | 侧边目录 | `assets/site.js` |
 | 配色、字体、三列布局 | `assets/style.css` |
 
-项目分别放在 `drone-racing`、`drone-delivery`、`micro-drone`、`aic-delivery`、`cyberdog`、`intelligent-race` 六个文件夹。RoboCup 竞速页已有奖杯照片与无声演示视频；配送航程挑战赛页已有 Foxglove 点云与飞行记录截图；智能赛页记录首次参赛与复盘，其他项目可继续扩充。
+项目分别放在 `drone-racing`、`aic-delivery`、`rmua2026`、`drone-delivery`、`micro-drone`、`cyberdog`、`intelligent-race` 七个文件夹。RoboCup 竞速页已有奖杯照片与无声演示视频；配送航程挑战赛页已有 Foxglove 点云与飞行记录截图；RMUA 页记录榜单与复盘；智能赛页记录首次参赛与复盘，其他项目可继续扩充。
 
 在 GitHub 网页打开对应 `index.html`，点击编辑即可继续扩充。上传素材到项目的 `media/`，再引用同目录相对路径；代码可放在 `code/`，也可以链接到实际维护代码的独立仓库。当前尚未添加实际源码。
 
