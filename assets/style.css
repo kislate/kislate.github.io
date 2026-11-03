@@ -175,3 +175,13 @@ figcaption { margin-top: 8.1px; color: var(--muted); font: 11.7px/1.8 var(--sans
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 .project-records h3 { font-size: 17.1px; font-weight: 500; margin: 18px 0 7.2px; }
 .project-toc a:hover { color: var(--accent); }
+.project-media { margin: 20px 0; }
+.project-media > img, .project-media > video { width: 100%; }
+.project-media > video { background: #242021; }
+.award-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 20px 0; }
+.award-pair img { width: 100%; aspect-ratio: 3 / 4; object-fit: contain; }
+.record-label { display: block; color: var(--accent); font: 12px/1.8 var(--sans); margin-bottom: 4px; }
+.project-reflection { border-top: 1px solid var(--rule); padding-top: 18px; margin-top: 24px; }
+@media (max-width: 560px) {
+  .award-pair { grid-template-columns: 1fr; gap: 22px; }
+}

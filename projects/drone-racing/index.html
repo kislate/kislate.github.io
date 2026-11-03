@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>无人机自主飞行竞速 — 李宗锴 / kislate</title>
-  <meta name="description" content="李宗锴的项目记录、代码与演示。">
+  <meta name="description" content="RoboCup 无人机自主飞行竞速的核心开发与比赛记录：2025 年专项赛亚军、全国总决赛冠军。">
   <meta name="theme-color" content="#e9e3d8">
-  <link rel="stylesheet" href="../../assets/style.css?v=20261101-5">
-  <script defer src="./showcase.js?v=20261101-4"></script>
-  <script defer src="../../assets/site.js?v=20261101-4"></script>
+  <link rel="stylesheet" href="../../assets/style.css?v=20261102-1">
+  <script defer src="./showcase.js?v=20261102-1"></script>
+  <script defer src="../../assets/site.js?v=20261102-1"></script>
 </head>
 <body data-root="../../" data-page="projects" data-project="drone-racing">
   <a class="skip" href="#main">跳到正文</a>
@@ -18,31 +18,46 @@
       <article class="paper">
         <header class="running-head"><span>李宗锴 / KISLATE</span><span>项目记录</span></header>
         <a class="back" href="../">← 项目目录</a>
-        <div class="page-title detail-title"><h1>无人机自主飞行竞速</h1><p class="subtitle">RoboCup 中国赛 · 2025.08</p></div>
-        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#records">实现记录</a><a href="#code">代码</a><a href="#demo">图片与演示</a></nav>
+        <div class="page-title detail-title"><h1>无人机自主飞行竞速</h1><p class="subtitle">RoboCup 中国赛 · 2025.08—10</p></div>
+        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#work">核心工作</a><a href="#records">飞行记录</a><a href="#demo">终端演示</a><a href="#awards">比赛结果</a><a href="#code">代码</a></nav>
         <div class="detail-body prose">
-          <section id="overview"><h2>项目概述</h2><p>无人机需要识别不同类型的障碍物，并在飞行过程中完成目标搜索、连续穿越和降落。我作为核心成员，独立编写基于 ROS / MAVROS 的任务与飞行控制程序。</p></section>
-          <dl class="project-facts"><div><dt>参与工作</dt><dd>核心成员 · 任务与飞行控制程序</dd></div><div><dt>团队成果</dt><dd>全国总决赛冠军 · 国家级一等奖</dd></div></dl>
-          <section class="paper-section" id="work"><h2>我做的部分</h2><ul>
-              <li>采用点云聚类、平面提取与 OpenCV 识别，输出障碍物的类型和三维位置，为连续穿越提供目标信息。</li>
-              <li>设计圆环、横竖框和刀旗的通过策略，结合航向平滑、目标选择与丢失目标重搜，组织连续飞行任务。</li>
-              <li>参与飞行控制与实机联调，团队获得全国总决赛冠军。</li>
-          </ul></section>
-          <section class="paper-section project-records" id="records"><h2>实现记录</h2>
-            <h3>感知与目标</h3><p>识别部分负责将场地中的障碍物整理为类型与三维位置，任务程序再利用这些信息选择穿越目标。</p>
-            <h3>任务与飞行</h3><p>程序覆盖起飞、目标搜索、连续穿越与降落；针对不同障碍物分别安排通过策略，并处理目标丢失后的重新搜索。</p>
+          <section id="overview">
+            <h2>第一次承担核心开发</h2>
+            <p>在<a href="../intelligent-race/">智能赛的初次参赛</a>之后，RoboCup 是我第一次作为核心开发成员承担主要技术工作的比赛。我独立编写基于 ROS / MAVROS 的任务与飞行控制程序，并负责障碍物感知与连续穿越策略的开发。</p>
+            <p>无人机需要识别场地中的圆环、横竖框和刀旗，在自主飞行中完成目标搜索、连续穿越与降落。感知结果需要转化为实际可执行的飞行动作，任务程序也需要应对目标选择、航向调整和目标丢失等情况。</p>
           </section>
-          <section class="asset-section" id="code"><h2>代码</h2><p class="asset-note">源码待整理。</p><p><a href="https://github.com/kislate/kislate.github.io/tree/main/projects/drone-racing/code" target="_blank" rel="noopener noreferrer">代码目录 ↗</a></p>
-            <!-- 可以在这里添加真实仓库链接、运行说明，或用 pre / code 展示代码片段。 -->
+          <dl class="project-facts"><div><dt>个人职责</dt><dd>核心开发 · 感知、任务与飞行控制</dd></div><div><dt>团队成果</dt><dd>专项赛亚军 → 全国总决赛冠军</dd></div></dl>
+          <section class="paper-section" id="work">
+            <h2>我做的部分</h2>
+            <ul>
+              <li>采用点云聚类、平面提取与 OpenCV 识别，输出障碍物类型和三维位置，为连续穿越提供目标信息。</li>
+              <li>独立编写 ROS / MAVROS 任务与飞控程序，组织起飞、目标搜索、连续穿越与降落。</li>
+              <li>针对圆环、横竖框和刀旗设计通过策略，结合航向平滑、目标选择与丢失目标重搜，完成多种障碍物的连续飞行任务。</li>
+              <li>参与实机联调，将感知结果、任务切换与飞行控制衔接到实际运行中。</li>
+            </ul>
           </section>
-          <section class="asset-section" id="demo"><h2>图片与演示</h2><p class="asset-note">演示视频与图片待补充。</p>
-            <!-- 上传素材到本项目 media/ 后，可在此取消注释并替换文件名：
-            <figure><img src="./media/example.jpg" alt="项目现场或运行结果" loading="lazy"><figcaption>图片说明</figcaption></figure>
-            <video controls playsinline preload="metadata"><source src="./media/demo.mp4" type="video/mp4"></video>
-            -->
+          <section class="paper-section project-records" id="records">
+            <h2>从识别结果到飞行轨迹</h2>
+            <p>感知模块将障碍物整理为类型与三维位置，任务程序据此选择目标、安排通过方式，并在目标丢失时重新搜索。下面这张航程赛飞行记录图，保留了场地点云与飞行轨迹，可以对照观察路线和障碍物的空间关系。</p>
+            <figure class="project-media"><img src="./media/flight-record.png" alt="三维场地点云中的圆环、框架与绿色飞行轨迹" width="1221" height="901" loading="lazy"><figcaption>航程赛飞行记录：场地点云、障碍物与飞行轨迹。</figcaption></figure>
           </section>
+          <section class="paper-section" id="demo">
+            <h2>运行中的终端与 RViz</h2>
+            <p>这段录屏记录了程序运行时的终端输出与 RViz 可视化，展示障碍物识别结果、位置反馈及飞行任务的执行状态。</p>
+            <figure class="project-media"><video controls muted playsinline preload="metadata" poster="./media/terminal-poster.jpg" aria-label="RoboCup 终端与 RViz 运行演示，无声"><source src="./media/terminal-demo.mp4" type="video/mp4"></video><figcaption>终端与 RViz 运行记录 · 约 2 分 34 秒 · 无声。</figcaption></figure>
+          </section>
+          <section class="paper-section" id="awards">
+            <h2>从专项赛到总决赛</h2>
+            <p>2025 年 8 月，我们在山东烟台获得无人机自主飞行竞速专项赛亚军。同年 10 月 17—19 日，在河北石家庄的全国总决赛中，团队获得该赛项冠军、国家级一等奖。</p>
+            <div class="award-pair">
+              <figure><img src="./media/special-runner-up.jpg" alt="2025 年 8 月山东烟台无人机自主飞行竞速专项赛亚军奖杯" width="6144" height="8192" loading="lazy"><figcaption><span class="record-label">2025.08 / 山东 · 烟台</span>专项赛亚军</figcaption></figure>
+              <figure><img src="./media/finals-champion.jpg" alt="2025 年 10 月河北石家庄无人机自主飞行竞速总决赛冠军奖杯" width="1440" height="1920" loading="lazy"><figcaption><span class="record-label">2025.10 / 河北 · 石家庄</span>全国总决赛冠军</figcaption></figure>
+            </div>
+            <div class="project-reflection"><p>截至 2026 年 11 月，这个冠军也是团队取得的最高荣誉。第一次承担核心开发工作，最终和队友一起拿到这样的成绩，我很开心。</p></div>
+          </section>
+          <section class="asset-section" id="code"><h2>代码</h2><p class="asset-note">源码待整理。</p><p><a href="https://github.com/kislate/kislate.github.io/tree/main/projects/drone-racing/code" target="_blank" rel="noopener noreferrer">代码目录 ↗</a></p></section>
         </div>
-        <footer class="page-footer"><a href="../../projects/">返回项目目录 →</a><span>PROJECTS</span></footer>
+        <footer class="page-footer"><a href="../">返回项目目录 →</a><span>PROJECTS</span></footer>
       </article>
     </main>
     <aside class="showcase" id="showcase" aria-label="展柜"></aside>

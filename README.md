@@ -19,9 +19,9 @@
 | 侧边目录 | `assets/site.js` |
 | 配色、字体、三列布局 | `assets/style.css` |
 
-项目分别放在 `drone-racing`、`drone-delivery`、`micro-drone`、`aic-delivery`、`cyberdog`、`airhust-site` 六个文件夹。各自包含概述、工作内容、实现记录、代码和演示栏目；页面中保留了图片、视频和代码的编辑示例注释。
+项目分别放在 `drone-racing`、`intelligent-race`、`drone-delivery`、`micro-drone`、`aic-delivery`、`cyberdog`、`airhust-site` 七个文件夹。RoboCup 竞速页已有飞行记录、奖杯照片与无声演示视频；智能赛页记录首次参赛与复盘，其他项目可继续扩充。
 
-在 GitHub 网页打开对应 `index.html`，点击编辑即可继续扩充。上传素材到项目的 `media/`，再引用同目录相对路径；代码可放在 `code/`，也可以链接到实际维护代码的独立仓库。当前尚未添加实际源码或演示素材。
+在 GitHub 网页打开对应 `index.html`，点击编辑即可继续扩充。上传素材到项目的 `media/`，再引用同目录相对路径；代码可放在 `code/`，也可以链接到实际维护代码的独立仓库。当前尚未添加实际源码。
 
 ## 展柜
 
