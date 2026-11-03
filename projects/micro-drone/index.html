@@ -6,8 +6,8 @@
   <title>微型无人机 — 李宗锴 / kislate</title>
   <meta name="description" content="李宗锴的项目记录与演示。">
   <meta name="theme-color" content="#e9e3d8">
-  <link rel="stylesheet" href="../../assets/style.css?v=20261102-1">
-  <script defer src="./showcase.js?v=20261101-4"></script>
+  <link rel="stylesheet" href="../../assets/style.css?v=20261103-4">
+  <script defer src="./showcase.js?v=20261103-4"></script>
   <script defer src="../../assets/site.js?v=20261103-3"></script>
 </head>
 <body data-root="../../" data-page="projects" data-project="micro-drone">
@@ -19,24 +19,19 @@
         <header class="running-head"><span>李宗锴 / KISLATE</span><span>项目记录</span></header>
         <a class="back" href="../">← 项目目录</a>
         <div class="page-title detail-title"><h1>微型无人机</h1><p class="subtitle">中国机器人及人工智能大赛 · CRAIC · 2026.07</p></div>
-        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#records">实现记录</a><a href="#demo">图片与演示</a></nav>
+        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#work">参与工作</a><a href="#demo">效果图</a></nav>
         <div class="detail-body prose">
-          <section id="overview"><h2>项目概述</h2><p>比赛中的目标是放在现实场地里的 CIFAR-100 图片打印件。我参与识别环节，重点制作适配实机背景、目标姿态和光照变化的训练数据。</p></section>
-          <dl class="project-facts"><div><dt>参与工作</dt><dd>训练数据制作 · CIFAR-100 打印靶标识别</dd></div><div><dt>团队成果</dt><dd>国家级一等奖</dd></div></dl>
-          <section class="paper-section" id="work"><h2>我做的部分</h2><ul>
-              <li>将靶标自动合成到实拍背景中，并同步生成目标框标注。</li>
-              <li>加入旋转、缩放、亮度、对比度和噪声增强。</li>
-              <li>自动生成 40 万张带标注图像，其中训练集 32 万张、验证集 8 万张，用于模型训练与实机识别。</li>
+          <section id="overview"><h2>项目概述</h2><p>比赛中的目标是放在现实场地里的 CIFAR-100 图片打印件。我参与了靶标识别和实机部署，飞行任务沿用已有的起飞、绕圈流程。</p></section>
+          <dl class="project-facts"><div><dt>参与工作</dt><dd>CIFAR-100 靶标识别 · 实机部署</dd></div><div><dt>团队成果</dt><dd>国家级一等奖</dd></div></dl>
+          <section class="paper-section" id="work"><h2>我参与的部分</h2><ul>
+              <li>参与 CIFAR-100 靶标识别与实机部署。</li>
+              <li>沿用已有的任务控制流程，完成起飞与绕圈飞行。</li>
           </ul></section>
-          <section class="paper-section project-records" id="records"><h2>实现记录</h2>
-            <h3>从打印靶标到训练样本</h3><p>数据制作围绕现实场地中的背景、目标姿态和光照变化展开，将靶标合成到实拍背景中，再进行图像增强。</p>
-            <h3>标注与划分</h3><p>图像合成的同时生成目标框标注，并将数据划分为训练集和验证集。后续可以在这里补充数据样例、生成脚本和实机识别对比。</p>
-          </section>
-          <section class="asset-section" id="demo"><h2>图片与演示</h2><p class="asset-note">演示视频与图片待补充。</p>
-            <!-- 上传素材到本项目 media/ 后，可在此取消注释并替换文件名：
-            <figure><img src="./media/example.jpg" alt="项目现场或运行结果" loading="lazy"><figcaption>图片说明</figcaption></figure>
-            <video controls playsinline preload="metadata"><source src="./media/demo.mp4" type="video/mp4"></video>
-            -->
+          <section class="asset-section" id="demo"><h2>识别与飞行效果</h2>
+            <div class="result-gallery">
+              <figure><a href="./media/2436E10F57FB9CB64DAFEB051E61DC2D.png" target="_blank" rel="noopener noreferrer"><img src="./media/2436E10F57FB9CB64DAFEB051E61DC2D.png" alt="打印靶标中的鱼类图案被绿色检测框圈出，显示 aquarium_fish 类别标签" width="300" height="136" loading="lazy"></a><figcaption>靶标识别结果：检测框与类别标签。</figcaption></figure>
+              <figure><a href="./media/32B5D902B4DD2C90F1AF5DBB04C36B71.png" target="_blank" rel="noopener noreferrer"><img src="./media/32B5D902B4DD2C90F1AF5DBB04C36B71.png" alt="三维场地点云中的圆环、框架与绿色飞行轨迹显示" width="300" height="237" loading="lazy"></a><figcaption>点云与飞行轨迹显示。两张图均可点击查看原图。</figcaption></figure>
+            </div>
           </section>
         </div>
         <footer class="page-footer"><a href="../../projects/">返回项目目录 →</a><span>PROJECTS</span></footer>

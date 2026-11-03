@@ -185,3 +185,6 @@ figcaption { margin-top: 8.1px; color: var(--muted); font: 11.7px/1.8 var(--sans
 @media (max-width: 560px) {
   .award-pair { grid-template-columns: 1fr; gap: 22px; }
 }
+.result-gallery { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 24px; margin: 20px 0; }
+.result-gallery figure { flex: 0 1 300px; min-width: 0; }
+.result-gallery img { width: 100%; max-width: 300px; height: auto; }
