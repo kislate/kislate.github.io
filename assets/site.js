@@ -3,12 +3,11 @@ const current = document.body.dataset.page;
 const project = document.body.dataset.project;
 const projects = [
   ['drone-racing', '自主飞行竞速'],
-  ['intelligent-race', '智能赛 · 初次参赛'],
   ['drone-delivery', '识别与快递运输'],
   ['micro-drone', '微型无人机'],
   ['aic-delivery', '无人机配送'],
   ['cyberdog', 'CyberDog'],
-  ['airhust-site', 'AIRHUST 网站'],
+  ['intelligent-race', '智能赛 · 初次参赛'],
 ];
 const expanded = current === 'projects' && matchMedia('(min-width: 841px)').matches;
 

@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#e9e3d8">
   <link rel="stylesheet" href="../../assets/style.css?v=20261102-1">
   <script defer src="./showcase.js?v=20261102-2"></script>
-  <script defer src="../../assets/site.js?v=20261102-1"></script>
+  <script defer src="../../assets/site.js?v=20261102-4"></script>
 </head>
 <body data-root="../../" data-page="projects" data-project="aic-delivery">
   <a class="skip" href="#main">跳到正文</a>
@@ -21,14 +21,18 @@
         <div class="page-title detail-title"><h1>无人机配送航程挑战赛</h1><p class="subtitle">全球校园人工智能算法精英大赛 · AIC · 2025.12</p></div>
         <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#records">实现记录</a><a href="#demo">图片与演示</a></nav>
         <div class="detail-body prose">
-          <section id="overview"><h2>项目概述</h2><p>我负责无人机配送航程任务的路径规划，结合比赛场地安排巡航点与投送路线。</p></section>
+          <section id="overview"><h2>项目概述</h2>
+            <p>这次航程挑战赛是 RoboCup 之后的一次技术复用。此前在感知、控制与实机调试中积累的经验，让我们面对后续比赛时从容了许多，技术实现也更为顺手。</p>
+            <p>我负责无人机配送航程任务的路径规划，结合比赛场地安排巡航点与投送路线。</p>
+          </section>
           <dl class="project-facts"><div><dt>参与工作</dt><dd>配送航程路径规划 · 任务流程联调</dd></div><div><dt>团队成果</dt><dd>国家级二等奖</dd></div></dl>
           <section class="paper-section" id="work"><h2>我做的部分</h2><ul>
               <li>根据场地组织巡航点和投送路线。</li>
+              <li>复用 RoboCup 穿环任务中的圆环识别。</li>
               <li>参与路径执行、投送位置及任务切换的联调。</li>
           </ul></section>
           <section class="paper-section project-records" id="records"><h2>实现记录</h2>
-            <h3>路线与任务衔接</h3><p>这一项目的工作集中在配送航程路径规划，以及路径执行、投送位置和任务切换之间的衔接。更多现场记录与实现细节，后续在这里补充。</p>
+            <h3>路线与任务衔接</h3><p>这一项目的工作集中在配送航程路径规划，以及路径执行、投送位置和任务切换之间的衔接。</p>
           </section>
           <section class="asset-section" id="demo"><h2>Foxglove 点云与飞行记录</h2>
             <p>这张 Foxglove 截图记录了无人机配送航程挑战赛中的场地点云、障碍物识别与飞行轨迹，可以对照观察飞行路线和场地的空间关系。</p>
