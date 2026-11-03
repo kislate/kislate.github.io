@@ -7,7 +7,7 @@
   <meta name="description" content="RoboCup 无人机自主飞行竞速的核心开发与比赛记录：2025 年专项赛亚军、全国总决赛冠军。">
   <meta name="theme-color" content="#e9e3d8">
   <link rel="stylesheet" href="../../assets/style.css?v=20261102-1">
-  <script defer src="./showcase.js?v=20261102-1"></script>
+  <script defer src="./showcase.js?v=20261102-2"></script>
   <script defer src="../../assets/site.js?v=20261102-1"></script>
 </head>
 <body data-root="../../" data-page="projects" data-project="drone-racing">
@@ -19,7 +19,7 @@
         <header class="running-head"><span>李宗锴 / KISLATE</span><span>项目记录</span></header>
         <a class="back" href="../">← 项目目录</a>
         <div class="page-title detail-title"><h1>无人机自主飞行竞速</h1><p class="subtitle">RoboCup 中国赛 · 2025.08—10</p></div>
-        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#work">核心工作</a><a href="#records">飞行记录</a><a href="#demo">终端演示</a><a href="#awards">比赛结果</a><a href="#code">代码</a></nav>
+        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#work">核心工作</a><a href="#demo">终端演示</a><a href="#awards">比赛结果</a><a href="#code">代码</a></nav>
         <div class="detail-body prose">
           <section id="overview">
             <h2>第一次承担核心开发</h2>
@@ -35,11 +35,6 @@
               <li>针对圆环、横竖框和刀旗设计通过策略，结合航向平滑、目标选择与丢失目标重搜，完成多种障碍物的连续飞行任务。</li>
               <li>参与实机联调，将感知结果、任务切换与飞行控制衔接到实际运行中。</li>
             </ul>
-          </section>
-          <section class="paper-section project-records" id="records">
-            <h2>从识别结果到飞行轨迹</h2>
-            <p>感知模块将障碍物整理为类型与三维位置，任务程序据此选择目标、安排通过方式，并在目标丢失时重新搜索。下面这张航程赛飞行记录图，保留了场地点云与飞行轨迹，可以对照观察路线和障碍物的空间关系。</p>
-            <figure class="project-media"><img src="./media/flight-record.png" alt="三维场地点云中的圆环、框架与绿色飞行轨迹" width="1221" height="901" loading="lazy"><figcaption>航程赛飞行记录：场地点云、障碍物与飞行轨迹。</figcaption></figure>
           </section>
           <section class="paper-section" id="demo">
             <h2>运行中的终端与 RViz</h2>

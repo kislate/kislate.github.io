@@ -4,5 +4,7 @@
 const showcaseContent = {
   "note": "配送航程与任务切换的补充记录。",
   "links": [],
-  "attachments": []
+  "attachments": [
+    { "title": "Foxglove 点云与飞行记录", "path": "media/flight-record.png", "note": "无人机配送航程挑战赛" }
+  ]
 };
