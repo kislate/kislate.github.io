@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>无人机识别与快递运输 — 李宗锴 / kislate</title>
-  <meta name="description" content="李宗锴的项目记录、代码与演示。">
+  <meta name="description" content="李宗锴的项目记录与演示。">
   <meta name="theme-color" content="#e9e3d8">
   <link rel="stylesheet" href="../../assets/style.css?v=20261102-1">
   <script defer src="./showcase.js?v=20261101-4"></script>
@@ -19,7 +19,7 @@
         <header class="running-head"><span>李宗锴 / KISLATE</span><span>项目记录</span></header>
         <a class="back" href="../">← 项目目录</a>
         <div class="page-title detail-title"><h1>无人机识别与快递运输</h1><p class="subtitle">RoboCup 中国赛 · 2026.10</p></div>
-        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#records">实现记录</a><a href="#code">代码</a><a href="#demo">图片与演示</a></nav>
+        <nav class="project-toc" aria-label="本项目目录"><a href="#overview">概述</a><a href="#records">实现记录</a><a href="#demo">图片与演示</a></nav>
         <div class="detail-body prose">
           <section id="overview"><h2>项目概述</h2><p>这个项目围绕无人机的全图搜索与快递运输任务展开。我主要负责搜索路径规划，并深度参与 EGO-Planner 调优，衔接全图搜索路线与局部避障轨迹的执行。</p></section>
           <dl class="project-facts"><div><dt>参与工作</dt><dd>全图搜索路径规划 · EGO-Planner 调优</dd></div><div><dt>团队成果</dt><dd>国家级一等奖</dd></div></dl>
@@ -31,9 +31,6 @@
           <section class="paper-section project-records" id="records"><h2>实现记录</h2>
             <h3>覆盖与补扫</h3><p>搜索路线需要覆盖场地区域，也需要根据实际飞行位置记录搜索进度，对遮挡和遗漏区域补扫。路线连接处还要检查障碍夹角等不可通行的位置。</p>
             <h3>全局路线与局部轨迹</h3><p>全图搜索给出任务路线，局部避障负责轨迹执行。联调中涉及障碍膨胀、速度约束和重规划等设置。</p>
-          </section>
-          <section class="asset-section" id="code"><h2>代码</h2><p class="asset-note">源码待整理。</p><p><a href="https://github.com/kislate/kislate.github.io/tree/main/projects/drone-delivery/code" target="_blank" rel="noopener noreferrer">代码目录 ↗</a></p>
-            <!-- 可以在这里添加真实仓库链接、运行说明，或用 pre / code 展示代码片段。 -->
           </section>
           <section class="asset-section" id="demo"><h2>图片与演示</h2><p class="asset-note">演示视频与图片待补充。</p>
             <!-- 上传素材到本项目 media/ 后，可在此取消注释并替换文件名：
